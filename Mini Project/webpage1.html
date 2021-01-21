@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Graphs 
+        </title>
+            <link rel = "icon" href = "statistics.png">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/mathjs@8.1.0/lib/browser/math.js"></script>
+            <script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
+          
+            <style>
+              #grad1 {
+              height: 100%;
+              background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255));
+                      }
+              input[type=text] {
+                width: 300px;
+              }
+              input {
+                padding: 6px;
+              }
+              body, html, input {
+                font-family: sans-serif;
+                font-size: 11pt;
+          
+              }
+              form {
+                margin: 20px 0;
+              }
+              footer{
+    background-color: #f1f1f18e;
+    padding-top: 50px;            
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #495057;
+
+ }
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+a:link {
+  color: rgb(61, 61, 61);
+}
+
+a:hover {
+  color: rgb(107, 144, 201);
+}
+
+a:active {
+  color: blue;
+
+}
+            </style>
+    </head>
+    
+    <body style = "background-color: rgb(255, 255, 255);">
+            <nav class="navbar navbar-collapse navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <a  style = "padding-left: 10px; text-emphasis: padding 100px;" class="navbar-brand" href="webpage1.html"><img style = "filter: invert(1); " src="statistics.png" alt="" width="30" height="24" class="d-inline-block align-top">
+                          Graph</a>
+                      <button style = "padding: 10px;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a style = "padding:10px;"class="nav-link active" aria-current="page" href="webpage1.html">Home</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a style = "padding:10px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Choose
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="webpage2.html">Math Graph</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="webpage3.html">Charts</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col" id = "grad1" style = "border-right: 2px solid rgb(218, 218, 218); background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(255, 255, 255)); background-color: white; height:3050px;">
+                      </div>
+                      <div class="col-10" style = "background-color: white; ">
+                        <p style = "padding:0.5cm; font-size: 26px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;">Graphs</p>
+                        <p style = "padding:0.5cm; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; word-spacing: 5px; font-size: large;">In mathematics, graph theory is the study of graphs, which are mathematical structures used to model pairwise relations between objects. A graph in this context is made up of vertices (also called nodes or points) which are connected by edges (also called links or lines). A distinction is made between undirected graphs, where edges link two vertices symmetrically, and directed graphs, where edges link two vertices asymmetrically; see Graph (discrete mathematics) for more detailed definitions and for other variations in the types of graph that are commonly considered. Graphs are one of the prime objects of study in discrete mathematics.
+                        </p>
+                        <img src = 'graph1.webp' class="center">
+                        <p style = "padding:0.5cm; font-size: 26px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;">Types of Charts</p>
+                        <p style = "padding:0.5cm; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500; word-spacing: 5px; font-size: large;">There are several different types of charts and graphs. The four most common are probably line graphs, bar graphs and histograms, pie charts, and Cartesian graphs. They are generally used for, and are best for, quite different things.
+                        </p>
+                        <p style = "padding:0.5cm; font-size: 26px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;">Bar Graphs and Histograms</p>
+                        <p style = "padding:0.5cm; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; word-spacing: 5px; font-size: large;">Bar graphs generally have categories on the x-axis, and numbers on the y-axis (but these are interchangeable). This means that you can compare numbers between different categories. The categories need to be independent, that is changes in one of them do not affect the others.
+
+                          Here is a summary of 'some data' in a data table:
+                          
+                          
+                          
+                        
+                        </p>
+                        <img src = 'graphs2.png' class="center" width="200px" height="200px">
+
+                        <p style = "padding:0.5cm; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; word-spacing: 5px; font-size: large;">You can see immediately that this graph gives you a clear picture of which category is largest and which is smallest. It gives a clear comparison between categories.
+
+                          You can also use the graph to read off information about how many are in each category without having to refer back to the data table, which may or may not be provided with every graph you see.
+                          
+                          In general, you can draw bar graphs with the bars either horizontal or vertical, because it doesn’t make any difference. The bars do not touch.
+                          
+                          A histogram is a specific type of bar chart, where the categories are ranges of numbers. Histograms therefore show combined continuous data.
+                        </p>
+                        <img src = 'barchat.jpg' class="center">
+
+                        <p style = "padding:0.5cm; font-size: 26px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 500;">Pie Charts</p>
+                        <p style = "padding:0.5cm; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; word-spacing: 5px; font-size: large;">A pie chart looks like a circle (or a pie) cut up into segments. Pie charts are used to show how the whole breaks down into parts.
+
+                          For example, this data shows the sales figures for a year, broken down by quarters:
+                        </p>
+                        <p style = "padding:0.5cm; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; word-spacing: 5px; font-size: large;">From the pie chart you can see immediately that sales in Quarter 1 were much bigger than all the others: more than 50% of total annual sales.
+
+                          Quarter 2 was next, with around 25% of sales.
+                          
+                          Without knowing anything more about this business, you might be concerned about the way that sales appeared to have dropped over the year.
+                          
+                          Pie charts, unlike bar graphs, show dependent data.
+                          
+                          The total sales in the year must have to have occurred in one quarter or another. If you’ve got the figures wrong, and Q1 should be smaller, one of the other quarters will have sales added to compensate, assuming that you haven’t made a mistake with the total.
+                          
+                          Pie charts show percentages of a whole - your total is therefore 100% and the segments of the pie chart are proportionally sized to represent the percentage of the total. For more on percentages see our page: Introduction to Percentages.
+                          
+                          Usually it is not appropriate to use pie charts for more than 5 or 6 different categories. Lots of segments are difficult to visualise and such data may be better displayed on a different type of chart or graph.
+                        </p>
+                        <img src = 'piechart.png' class="center">
+                        <p style = "padding:0.5cm; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 300; word-spacing: 5px; font-size: large;">These were some of the Graphs and Charts to be dealt with.</p>
+
+
+                      </div>
+                      <div class = "col" id = "grad1" style = " border-left: 2px solid rgb(218, 218, 218); height:3050px; width: 200px; background-size: 100%; background-color: white; background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255));">
+                      </div>
+                    </div>
+                  </div>
+<footer style="height:100px; padding-left: 100px;">
+<a href="https://en.wikipedia.org/wiki/Graph" class="link-dark">About</a> 
+<a style = "padding-left:30px;" href ="http://newhorizonindia.edu/nhengineering/" class="link-dark">NHCE</a> 
+<a style = "padding-left:30px;" href ="webpage6.html" class="link-dark">Feedback</a> 
+
+<a style="padding-left: 1000px; " href="https://www.reddit.com" class= 'link-dark'><img src = 'red.png' height="30px" width="30px" ><i class="fa fa-align-right" aria-hidden="true"></i></a>
+<p style = "font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(99, 112, 124); padding-top: 15px; font-weight: lighter;">
+    Designed with the help of Bootstrap, HTML, CSS and Javascript.
+</p>
+</footer>
+    </body>
+</html>
